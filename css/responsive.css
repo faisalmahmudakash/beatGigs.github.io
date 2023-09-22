@@ -1,0 +1,753 @@
+@media (max-width: 1024px) {
+
+    /*navBar section*/
+    #navbarSupportedContent .navbar-ul ul li a {
+        font-size: 1.8rem;
+    }
+
+    #navbarSupportedContent .navbar-ul ul li {
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+    /*navBar section END*/
+
+    /*main section*/
+    .right-main-content img {
+        width: 100%;
+    }
+
+    .right-main-content .message-img {
+        width: 240px;
+        margin-left: 66px;
+        margin-top: -62px;
+    }
+
+    .message-txt .message-p {
+        font-size: 16px;
+        margin-top: -79px;
+        margin-left: 35px;
+    }
+
+    .card-gap {
+        gap: 1rem;
+    }
+
+    .card-content-txt h2 {
+        font-size: 16px;
+    }
+
+    .card-content-starImg {
+        width: 20px;
+        height: 18px;
+    }
+
+    .card-content p span {
+        font-size: 1.0rem;
+    }
+
+    .card-content-txt .p3 {
+        font-size: 1.7rem;
+    }
+
+    /*main section END*/
+
+    /*popular catagories section (1) */
+    .popular-card-items .card {
+        width: 22.6rem;
+        height: 28.1rem;
+    }
+
+    /*popular catagories section (1) END*/
+
+    /*customers reviow section (3)*/
+    .our-best-chef-img img {
+        width: 43.6rem;
+    }
+
+    .section h3 {
+        font-size: 4.4rem;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .customer-img button {
+        margin-right: -2.8rem;
+        width: 51%;
+    }
+
+    .customer-reviow-txt P:first-child {
+        font-size: 23px;
+    }
+
+    .customer-reviow-txt {
+        justify-content: flex-end;
+    }
+
+    .customer-img img {
+        border: none;
+    }
+
+    /*customers reviow section (3) END*/
+
+    /*Journey and services section (4)*/
+
+    .service-card-group-one {
+        gap: 11rem;
+        display: flex;
+        justify-content: center;
+        margin-right: 2.5rem;
+
+    }
+
+    /*Journey and services section (4) END*/
+
+    /*Footer section (5)*/
+    .footer-section p {
+        font-size: 16px;
+        width: 196px;
+    }
+
+    .copyright-txt p {
+        font-size: 16px;
+        width: 46.3rem;
+    }
+
+    /*Footer section (5) END*/
+}
+
+@media (max-width: 991px) {
+
+    /*Main section*/
+    .right-main-content .message-img {
+        width: 169px;
+        margin-left: 72px;
+        margin-top: -79px;
+    }
+
+    .message-txt .message-p {
+        font-size: 12px;
+        margin-top: -100px;
+        margin-left: 40px;
+    }
+
+    .left-main-content {
+        height: 60vh;
+    }
+
+    .left-main-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .right-main-content img {
+        width: 100%;
+    }
+
+    .card-content {
+        height: 7vh;
+        width: 15.2rem;
+    }
+
+    .card-content-img img {
+        height: 5rem;
+        margin-top: -7px;
+    }
+
+    .col-md-8.card-content-txt {
+        margin-top: -7px;
+        padding-left: 0px;
+    }
+
+    .card-content-txt h2 {
+        font-size: 12px;
+    }
+
+    .card-content-starImg {
+        width: 15px;
+        height: 12px;
+    }
+
+    .card-content-txt .p3 {
+        font-size: 12px;
+    }
+
+    /*Main section END*/
+
+    /* popular catagories section (1)*/
+    .popular-catagories-section {
+        margin-top: 2rem;
+    }
+
+    .popular-card-items .card {
+        width: 16.6rem;
+        height: 22.1rem;
+    }
+
+    /* popular catagories section (1) END*/
+
+    /*customers reviow section (3)*/
+    .section h3 {
+        font-size: 3.2rem;
+    }
+
+    .section p {
+        font-size: 13px;
+    }
+
+    .our-best-chef-img img {
+        width: 33.6rem;
+    }
+
+    .customer-img img {
+        border: none;
+        width: 99%;
+        height: 55px;
+    }
+
+    /*customers reviow section (3) END*/
+
+
+    /*Journey and services section (4)*/
+    .journey-and-services .card-info {
+        width: 182px;
+        height: 230px;
+    }
+
+    /*Journey and services section (4) END*/
+
+
+    /*Footer section (5)*/
+    .footer-item {
+        margin-left: 40px;
+        margin-right: -40px;
+    }
+
+    section.section.footer-section p {
+        width: 165px;
+    }
+
+    .col-md-3.footer-item p:first-child {
+        font-size: 2.5rem;
+    }
+
+    section.section.footer-section .copyright-txt p {
+        width: 284px;
+    }
+
+    /*Footer section (5) END*/
+
+}
+
+@media (max-width: 768px) {
+
+    /*Main section*/
+    .left-main-content {
+        height: 54vh;
+    }
+
+    .section h1 {
+        font-size: 35px;
+    }
+
+    .section p {
+        font-size: 1.5rem;
+    }
+
+    .right-main-content img {
+        width: 95%;
+    }
+
+    .right-main-content .message-img {
+        width: 164px;
+        margin-left: 77px;
+        margin-top: -82px;
+    }
+
+    .message-txt .message-p {
+        font-size: 11px;
+        margin-top: -104px;
+        margin-left: 42px;
+    }
+
+    .card-content {
+        max-width: 17.7rem;
+    }
+
+    .card-content-img img {
+        width: 100%;
+        height: 50px;
+    }
+
+    .card-gap {
+        gap: 1rem;
+    }
+
+    .card-content-txt h2 {
+        font-size: 14px;
+    }
+
+    .col-md-8.card-content-txt {
+        margin-left: -9px;
+    }
+
+    /*Main section END*/
+
+
+    /*popular catagories section (1)*/
+    .popular-card-items .card {
+        width: 17.1rem;
+        height: 22.1rem;
+        padding: .9rem;
+    }
+
+    .popular-card-items img {
+        width: 12.9rem;
+        height: 12.9rem;
+        margin-top: 9px;
+    }
+
+    .popular-card-items .card-text h2 {
+        font-size: 2.3rem;
+    }
+
+    .popular-card-items .card-text p {
+        font-size: 12px;
+    }
+
+    /*popular catagories section (1) END*/
+
+    /*customers reviow section (3)*/
+
+    .our-best-chef-img img {
+        width: 32.6rem;
+    }
+
+    .section h3 {
+        font-size: 32px;
+    }
+
+    .customer-img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .customer-reviow-txt P:first-child {
+        font-size: 19px;
+    }
+
+    .customer-reviow-txt {
+        margin-left: -19px;
+    }
+
+    /*customers reviow section (3) END*/
+
+    /*Journey and services section (4)*/
+    .service-card-group-one {
+        gap: 8rem;
+    }
+
+    .journey-and-services .card-info {
+        width: 150px;
+        height: 180px;
+    }
+
+    .card-img img {
+        width: 50px;
+        height: 49px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .service-card-group-one .card-title p {
+        margin-bottom: 0px;
+    }
+
+    .service-card-group-one .card-title p {
+        font-size: 10px;
+    }
+
+    .journey-and-services .card-text p {
+        font-size: 11px;
+    }
+
+    .journey-and-services .card-body {
+        padding: 0rem 0rem;
+    }
+
+    /*Journey and services section (4) END*/
+
+
+    /*Footer section (5)*/
+    .footer-section p {
+        width: 154px;
+    }
+
+    .footer-item p {
+        margin-top: 4px;
+    }
+
+    .copyright-txt p {
+        width: 100%;
+    }
+
+    /*Footer section (5) END*/
+}
+
+@media (max-width: 767px) {
+
+    /*Main section*/
+    .main-section .left-main-content {
+        height: 34vh;
+    }
+    .landing-page-button-info{
+        margin-top: 0rem;
+    }
+
+    .button2 button {
+        padding: 14px;
+        width: 118px;
+    }
+
+    .landing-p {
+        width: 149px;
+        margin-left: -37px;
+        margin-top: 5px;
+    }
+
+    .left-main-content {
+        width: 29rem;
+    }
+
+    .section h1 {
+        font-size: 29px;
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+
+    .left-main-content {
+        height: 40vh;
+    }
+
+    .right-main-content {
+        width: 46%;
+    }
+
+    .play-button img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .play-button {
+        width: 4rem;
+        height: 4rem;
+        margin-left: -68px;
+    }
+
+
+    .message-txt .message-p {
+        font-size: 6px;
+        margin-top: -140px;
+        margin-left: 49px;
+    }
+    .message-img img {
+        width: 94px;
+        margin-left: 11px;
+        margin-top: -31px;
+    }
+    .card-content-img img {
+        width: 34%;
+        height: 35px;
+        margin-top: 11px;
+        margin-left: -6px;
+    }
+
+    .card-content-img img {
+        width: 38%;
+        height: 34px;
+    }
+
+    .card-content-txt h2 {
+        font-size: 9px;
+    }
+
+    .card-content-starImg {
+        width: 7px;
+        height: 8px;
+    }
+
+    .col-md-8.card-content-txt {
+        margin-left: 46px;
+        margin-top: -47px;
+    }
+    /*Main section END*/
+
+    /*popular catagories section (1)*/
+    .popular-catagories-hedar-txt {
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+    .col-md-3.popular-card-items {
+        width: 34%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: -63px;
+    }
+    .popular-card-items .card {
+        width: 20.1rem;
+        height: 25.1rem;
+        padding: 0.9rem;
+    }
+    .row.popular-catagories-row {
+        display: flex;
+        justify-content: center;
+    }
+    /*popular catagories section (1) END*/
+
+    /*customers reviow section (3)*/
+    .our-best-chef-img img {
+        width: 37.6rem;
+        margin-top: -10.1rem
+    }
+    .customer-img button {
+        margin-right: -2.8rem;
+        width: 11%;
+    }
+    .col-md-6.our-best-chef-img {
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .customer-reviow-txt {
+        margin-left: -88px;
+        margin-top: -50px;
+    }
+
+    
+    .customer-txt {
+        text-align: center;
+    }
+    .customer-txt .p2 {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .customer-img {
+        margin-left: 41px;
+        width: 113%;
+    }
+    /*customers reviow section (3) END*/
+
+
+    /*Journey and services section (4)*/
+    .journey-and-services {
+        margin-top: 7rem;
+    }
+    .section .p2{
+        text-align: center;
+    }
+
+    .journey-and-services .h3{
+        text-align: center;
+    }
+    .section h3 {
+        text-align: center;
+    }
+    .button2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 37px;
+    }
+    .journey-and-services .card-info {
+        width: 190px;
+        height: 210px;
+    }
+    .service-card-group-one {
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+    /*Journey and services section (4) END*/
+
+    /*Footer Section (5)*/
+    .footer-section {
+        margin-top: 10rem;
+    }
+    .col-md-3.footer-logo-centering {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-3.footer-logo-centering img {
+        width: 109px;
+        height: 39px;
+    }
+
+    .footer-item {
+        margin-left: 24px;
+    }
+
+    section.section.footer-section p {
+        width: 351px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md-3.footer-logo-centering {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 42px;
+    }
+    .social-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Footer Section (5) END*/
+}
+
+
+@media (max-width: 576px){
+    section.section.main-section {
+        margin-left: 35px;
+    }
+    .right-main-content {
+        width: 40%;
+    }
+
+    /*customers reviow section (3)*/
+    .customer-reviow {
+        width: 98%;
+    }
+    .customer-txt {
+        padding-left: 76px;
+    }
+    .customer-reviow {
+        padding-left: 77px;
+    }
+    .customer-reviow-txt {
+        margin-left: -44px;
+        margin-top: -56px;
+    }
+
+    /*customers reviow section (3) END*/
+
+    /*Footer Section (5)*/
+    .footer-section .container:first-child{
+        max-width: 518px;
+    }
+
+    /*Footer Section (5) END*/
+}
+
+
+@media (max-width: 620px){
+
+    /*customers reviow section (3)*/
+    .col-md-6.customer-say-info {
+        width: 90%;
+    }
+    /*customers reviow section (3)*/
+    
+}
+
+@media (max-width: 518px){
+    /*Main Scetion*/
+    section.section.main-section {
+        margin-left: 13px;
+    }
+    /*Main Scetion END*/
+}
+
+
+@media (max-width: 425px) {
+
+    .navbar-expand-lg .container {
+        width: 80%;
+    }
+
+    /*Main section*/
+    .left-main-content h1 {
+        margin-top: -10rem;
+    }
+
+    .card-gap {
+        align-items: center;
+    }
+
+    .right-main-content {
+        width: 80%;
+    }
+
+    .right-main-content img {
+        width: 85%;
+        margin-left: -3px;
+    }
+
+    .right-main-content .image {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -11rem;
+        margin-right: -2.4rem;
+    }
+
+    .right-main-content .message-img {
+        margin-left: 120px;
+        margin-top: -177px;
+    }
+
+    .message-txt .message-p {
+        font-size: 9px;
+        margin-top: -202px;
+        margin-left: 86px;
+    }
+
+    .right-main-content .card-content-img img {
+        width: 50px;
+        height: 44px;
+        margin-top: 5px;
+    }
+
+    .card-content {
+        display: flex;
+        width: 178px;
+        height: 54px;
+        margin-left: 25px;
+    }
+
+    .card-content-txt {
+        margin-left: 50px;
+        margin-top: -45px;
+        width: 125px;
+    }
+
+    .col-md-8.card-content-txt {
+        margin-left: 56px;
+        margin-right: -10px;
+        margin-top: -54px;
+    }
+
+    .card-content-txt h2 {
+        font-size: 12px;
+    }
+
+    .card-content-starImg {
+        width: 13px;
+        height: 11px;
+    }
+
+    .card-content-txt .p3 {
+        font-size: 1.2rem;
+    }
+
+    /*Main section END*/
+
+
+    .popular-card-items {
+        width: 48%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -64px;
+    }
+}

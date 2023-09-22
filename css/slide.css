@@ -1,0 +1,165 @@
+/* Import Google font - Poppins */
+
+/*swipe slide*/
+.mySwiper{
+    margin-top: 10rem;
+}
+.swiper-slide .card {
+    /*width: 446px;*/
+    height: 523px;
+    border: none;
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 12px 12px 56px -22px rgba(8,0,0,0.77);
+    -webkit-box-shadow: -3px 3px 31px -22px rgba(8,0,0,17.77);
+    -moz-box-shadow: 12px 12px 56px -22px rgba(8,0,0,0.77);
+}
+
+.swipe-card .card-img img {
+    padding-top: 1.9rem;
+}
+
+.swipe-card .card-text {
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+.swipe-card .dishes-txt {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 4rem
+}
+
+.swiper {
+    width: 100%;
+    height: 50vh;
+}
+
+.swiper-slide {
+    font-size: 18px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide h2 {
+    font-size: 3rem;
+}
+
+.swiper-slide p {
+    font-size: 1.6rem;
+    text-align: start;
+    margin-right: 7px;
+}
+
+.swiper-slide p span {
+    color: var(--tomato);
+    font-size: 1.5rem;
+    padding-right: .3rem;
+}
+
+.swipe-card .card-img img {
+    width: 27.6rem;
+    height: 27.6rem;
+    margin: auto;
+}
+
+.dishes-txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishes-rating{
+    display: flex;
+}
+/*swipe slide End*/
+
+.slider-section{
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  margin-top: 10rem;
+  height: 58vh
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: silver;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  /*transition: transform 0.1s linear;*/
+  transform: translate(0.1s linear);
+  z-index: 1;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  /*height: 340px;*/
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.dishes-rating img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-top: 4px;
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}

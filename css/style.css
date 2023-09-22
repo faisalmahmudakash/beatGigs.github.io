@@ -1,0 +1,880 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../css/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../css/font/Inter-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /*1rem = 10px*/
+}
+
+:root {
+    --navbar-text-color: #272727;
+    --text-hover-color: #39DB4A;
+    --text-hover-color-clicked: #33dd99;
+    --white: #fff;
+    --h2-color: #000;
+    --p-color: #555;
+    --tomato: #FF6868;
+    --popular-item-bg: #C1F1C6;
+}
+
+
+/*================================
+        re-usable code
+================================*/
+.nav-button button {
+    background: var(--text-hover-color);
+    padding: 1rem;
+    width: 144px;
+    flex-shrink: 0;
+    border: none;
+    color: var(--white);
+    border-radius: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.button2 button {
+    background: var(--text-hover-color);
+    padding: 18px;
+    width: 155px;
+    flex-shrink: 0;
+    border: none;
+    color: var(--white);
+    border-radius: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    /*margin-left: 1.5rem;*/
+    box-shadow: -2px 22px 38px 0px rgba(142, 255, 154, 0.50);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.section h1 {
+    color: var(--h2-color);
+    font-family: 'Inter';
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 145.523%;
+}
+
+.section h3 {
+    color: var(--h2-color);
+    font-family: 'Inter';
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 145.523%;
+}
+
+.section p {
+    margin: 0 auto;
+    color: var(--p-color);
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170.5%;
+    text-align: justify;
+}
+
+.section .p2 {
+    color: var(--tomato);
+    font-family: 'Inter';
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+
+/*scroll to top button*/
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 2rem;
+  }
+ 
+  .scroll-to-top:hover {
+    background-color: #9fcdff;
+  }
+/*scroll to top button END*/
+
+/*================================
+        navBar section
+================================*/
+li.nav-item {
+    margin: inherit;
+}
+
+/*sticky navBar*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+    background-color: var(--white);
+}
+
+.scroll-down {
+    .header {
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+/*IF YOU NEED ANY STYLE WHEN SCROLL UP THEN WRITE CODE HERE*/
+.scroll-up {
+    .header {
+        border: none;
+        /*filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));*/
+    }
+}
+
+.menu-is-open {
+    overflow: hidden;
+
+    .header {
+        filter: none;
+    }
+}
+/*sticky navBar END/
+
+
+ /*nav-button (when responsive)*/
+.navbar-toggler {
+    border-color: black;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*nav-button (when responsive) END*/
+
+.navbar {
+    margin-top: 4.5rem;
+}
+
+.navbar img {
+    height: 2.5rem;
+}
+
+.nav-button img {
+    padding-right: 10px;
+}
+
+#navbarSupportedContent .navbar-ul ul li a {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    color: var(--navbar-text-color);
+    transition: all 0.2s linear;
+}
+
+#navbarSupportedContent .navbar-ul ul li {
+    padding: 0rem 6rem 0rem 0rem;
+}
+
+#navbarSupportedContent .navbar-ul ul li .active-color {
+    color: var(--text-hover-color);
+}
+
+#navbarSupportedContent .navbar-ul ul li:hover a {
+    color: var(--text-hover-color);
+}
+
+/*NAV-BAR ACTIVE EFFEC*/
+#navbarSupportedContent .navbar-ul ul li a.navActive{
+    color: var(--text-hover-color-clicked);
+    border-bottom: 1px solid green;
+}
+/*NAV-BAR ACTIVE EFFEC end*/
+
+#navbarSupportedContent .navbar-ul ul li a img {
+    padding-left: .1rem;
+}
+
+.shopping-bag {
+    margin-left: 2rem;
+}
+
+.shopping-bag-notification {
+    position: relative;
+    animation: shoping 1s infinite alternate-reverse;
+    transform-origin: top;
+}
+
+@keyframes shoping {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.shopping-bag-notification::after {
+    content: attr(current-count);
+    position: absolute;
+    top: 0;
+    right: -28%;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--text-hover-color);
+    border: 1px solid #01111b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.button button img {
+    padding-right: 0.5rem;
+}
+
+.button button {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 2rem;
+}
+
+/*================================
+        Main section
+================================*/
+
+section.section.main-section {
+    margin-top: 13.5rem;
+}
+
+.left-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.landing-page-button-info {
+    display: flex;
+    gap: 3.5rem;
+    margin-left: -2rem;
+    margin-top: 2rem
+}
+
+.landing-page-button-info p {
+    padding: 1rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.play-button {
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 6px 27px 34px rgba(0, 0, 0, 0.1);
+}
+
+.right-main-content {
+    position: relative;
+}
+
+.right-main-content img {
+    width: 100%;
+}
+
+.right-main-content .message-img {
+    position: absolute;
+    top: 18rem;
+    left: -9rem;
+}
+
+.message-txt {
+    position: absolute;
+    top: 22rem;
+    left: -4rem;
+}
+
+.message-txt p {
+    color: var(--tomato);
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.card-gap {
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.card-content {
+    border-radius: 25px;
+    background: var(--white);
+    border: none;
+    box-shadow: 7px 35px 51px 0px rgba(0, 0, 0, 0.14);
+    font-family: 'Inter';
+    margin-top: -8.5rem;
+    max-width: 25.7rem;
+}
+
+.card-content-img {
+    display: flex;
+    align-items: center;
+}
+
+.card-content-img img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    padding-left: 1rem;
+}
+
+.card-content-starImg img {
+    width: 1.3rem;
+    margin-right: .5rem;
+}
+
+.card-content p span {
+    color: var(--tomato);
+    font-size: 1.5rem;
+    padding-right: .3rem;
+}
+
+.card-content-txt h2 {
+    margin-top: 1rem;
+}
+
+/*================================
+  popular catagories  section (1)
+================================*/
+.popular-catagories-section {
+    margin-top: 10rem;
+}
+
+.popular-catagories-hedar-txt p,
+.popular-catagories-hedar-txt h3 {
+    text-align: center;
+}
+
+.popular-card-items .card {
+    margin-top: 7.8rem;
+    width: 31.1rem;
+    height: 31.1rem;
+    border: none;
+    border-radius: 40px;
+    background: var(--white);
+    box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s linear;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-card-items .card-text p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.popular-card-items .card-text h2 {
+    font-size: 3rem;
+}
+
+.popular-card-items img {
+    width: 13.9rem;
+    height: 13.9rem;
+    margin-top: 3.5rem;
+    background-color: var(--popular-item-bg);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.popular-card-items .card:hover {
+    scale: 1.07;
+}
+
+/*================================
+   Standout Dishes section (2)
+================================*/
+element.style {
+    width: 300px;
+    margin-right: 0px;
+}
+
+.standout-dishes-header {
+    margin-top: 20rem;
+}
+
+/*================================
+   customers reviow section (3)
+================================*/
+.customer-reviow-section {
+    margin-top: 20rem;
+}
+
+.our-best-chef-img img {
+    width: 50.6rem;
+}
+
+.customer-img img {
+    border: 7px solid var(--white);
+    border-radius: 50%;
+}
+
+.customer-img button {
+    border: none;
+    border-radius: 50%;
+    margin-right: -3.8rem;
+    transition: all 0.3s linear;
+}
+
+.customer-img button:hover {
+    scale: 1.1;
+}
+
+.customer-say-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.customer-reviow {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-reviow-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-reviow-txt P:first-child {
+    color: black;
+    font-family: 'Inter';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.customer-reviow-txt P:last-child {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.customer-reviow-txt p img {
+    margin-right: 1rem;
+}
+
+.customer-reviow-txt p span {
+    margin-right: 1rem;
+    color: #000;
+}
+
+/*================================
+Journey and services section (4)
+================================*/
+.services-card {
+    display: flex;
+    flex-direction: column;
+}
+.journey-and-services-p {
+    padding-bottom: 5rem;
+}
+
+.services-card .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.journey-and-services {
+    margin-top: 20rem;
+}
+
+.journey-and-services .card-info {
+    padding: 1rem;
+    border-radius: 30px;
+    background: var(--white);
+    box-shadow: 7px -5px 0px 0px rgba(0, 0, 0, 0.14);
+
+    width: 200px;
+    height: 240px;
+}
+
+.journey-and-services .card-img,
+.journey-and-services .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.journey-and-services .card-title p {
+    color: #5FE26C;
+    font-size: 1rem;
+    scale: 1.8;
+}
+
+.journey-and-services .card-text p {
+    color: #90BD95;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.service-card-group-one {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6rem;
+}
+
+/*================================
+        Footer section (5)
+================================*/
+.footer-section .footer-logo-centering img{
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-section {
+    margin-top: 12rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section img {
+    width: 70.193px;
+    height: 22.836px;
+
+    margin-top: 1.9rem;
+}
+
+.footer-section p {
+    margin-top: 1.5rem;
+    width: 250px;
+    font-size: 1.5rem;
+}
+
+.footer-item p a {
+    text-decoration: none;
+    color: var(--p-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/*text*/
+.footer-item p:first-child {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item p a:hover {
+    color: #FF6868;
+    letter-spacing: .3rem;
+    font-weight: 600;
+}
+
+/*footer ACTIVE EFFECT*/
+.footer-item p a.footerActive{
+    color: #FF6868;
+    letter-spacing: .3rem;
+    font-weight: 600;
+}
+/*footer ACTIVE EFFECT end*/
+
+/*social icon*/
+.social-icon {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    display: flex;
+}
+
+.social-icon a {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E1FFEE;
+    ;
+}
+
+.social-icon a:first-child {
+    background: #83ee8e;
+}
+
+.social-icon a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    transition: all 0.3s ease-in;
+}
+
+.social-icon a:hover {
+    scale: 1.01;
+    margin-top: -1rem;
+}
+
+.social-icon a img:hover {
+    animation: social-icon 0.6s infinite alternate-reverse;
+    transform-origin: top;
+}
+
+@keyframes social-icon {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.copyright-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-txt p {
+    width: 40rem;
+}
+
+/*IF ACTIVE THIS THEN DARK AND LIGHT MODE IS WORKING ON
+YOUR PC LIGHT AND DARK SETTING. SOME OF MOBILE DIVICE AND SIMILAR
+OTHER IS NOT SUPPORT THIS.*/
+@media (prefers-color-scheme: dar) {
+	body {
+		background-color: #01111b;
+	}
+    .header {
+        background-color: #01111b;
+    }
+     .message-txt .message-p{
+        color: var(--tomato);
+     }
+     .popular-card-items .card-text p,
+     .swipe-card .card-text p,
+     .swipe-card .dishes-txt p,
+     .section .p3{
+        color: black;
+     }
+     #navbarSupportedContent .navbar-ul ul li a,
+    .customer-reviow-txt P:first-child,
+    .customer-reviow-txt p span,
+    .footer-item p:first-child,
+    .footer-item p a,
+    .section h1,
+    .section p,
+    .section h3 {
+        color: var(--white);
+    }
+    .swiper-slide .card {
+        box-shadow: 21px 8px 25px -25px var(--text-hover-color);
+        -webkit-box-shadow: 21px 8px 25px -25px var(--text-hover-color);
+        -moz-box-shadow: 21px 8px 25px -25px var(--text-hover-color);
+        
+    }
+    .navbar-toggler{
+        border-color: white;
+    }
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+
+/*light and dark mode BUTTON decoration*/
+.button {
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.sun {
+    position: absolute;
+    font-size: 3rem;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transform: scale(0);
+    transition: 1s ease;
+}
+
+.moon {
+    font-size: 3rem;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    transition: 1s ease;
+    transition-delay: .5s;
+}
+
+input:checked~.sun {
+    transition-delay: .5s;
+    transform: scale(1) rotate(306deg);
+}
+
+input:checked~.moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+/*THIS IS FOR BUTTON CLICK MODE CHANGE. THIS BUTTON IS 
+WORKING ON PC AND ALL DIVICE*/
+/*THIS ALL CLASS FOR JAVAsCRIPT*/
+body.activebg {
+    transition: all 0.5s linear;
+    background: #01111b;
+}
+
+body.activebg header {
+    transition: all 0.3s linear;
+    background: #01111b;
+}
+
+body.activebg .message-txt .message-p{
+    color: var(--tomato);
+}
+.activebg .footer-item p a:hover{
+    color: var(--tomato);
+}
+
+.activebg .footer-item p a.footerActive{
+    color: var(--tomato);
+}
+
+.activebg .section .p2{
+    color: var(--tomato);
+    letter-spacing: 3.5px;
+}
+
+.activebg .popular-card-items .card-text p,
+.activebg .swipe-card .card-text p,
+.activebg .swipe-card .dishes-txt p,
+.activebg .section .p3 {
+    color: black;
+}
+
+.activebg #navbarSupportedContent .navbar-ul ul li a,
+.activebg .customer-reviow-txt P:first-child,
+.activebg .customer-reviow-txt p span,
+.activebg .footer-item p:first-child,
+.activebg .footer-item p a,
+.activebg .section h1,
+.activebg .section p,
+.activebg .section h3 {
+    color: var(--white);
+}
+
+.activebg .journey-and-services .card-title p,
+.activebg .journey-and-services .card-text p{
+    color: var(--text-hover-color);
+}
+
+.activebg #navbarSupportedContent .navbar-ul ul li a:hover{
+    color: var(--text-hover-color);
+}
+
+.activebg #navbarSupportedContent .navbar-ul ul li a.navActive {
+    color: var(--text-hover-color-clicked);
+}
+
+.activebg .journey-and-services .card-info {
+    box-shadow: 7px -5px 0px 0px rgba(229, 229, 229, 0.8);
+}
+
+.activebg .swiper-slide .card {
+    box-shadow: 21px 8px 25px -25px var(--text-hover-color);
+    -webkit-box-shadow: 21px 8px 25px -25px var(--text-hover-color);
+    -moz-box-shadow: 21px 8px 25px -25px var(--text-hover-color);
+}
+
+.activebg .navbar-toggler {
+    border-color: white;
+}
+
+.activebg .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*light and dark mode END*/
